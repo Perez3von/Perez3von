@@ -21,7 +21,8 @@ class Human {
   console.log('I'm coding...');
   
     while(working){
-
+    
+      console.log('Still coding...');
       drinkRedbull();
       code = code + code(task);
       working = status(code);
