@@ -1,6 +1,8 @@
 ### Hello, person viewing my profile! 👋
 
 ```
++ text in green
+- ![#c5f015]TEST `#c5f015`
 _______________________________________________________________________________________
 const person = new Human({
   name:'Evon Perez', 
