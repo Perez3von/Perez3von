@@ -31,7 +31,7 @@ class SoftwareEngineer {
 
   let code = '';
   let working = true;
-  console.log('I'm coding...');
+  console.log("I'm coding...");
   
     while(working){
     
@@ -42,7 +42,7 @@ class SoftwareEngineer {
 
     }
 
-  console.log('I'm done coding...');
+  console.log("I'm done coding...");
   return code;
 
   }
