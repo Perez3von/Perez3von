@@ -17,7 +17,7 @@ class Human {
   writeCode(task){ 
 
   let code = '';
-  working = true;
+  let working = true;
   console.log('I'm coding...');
   
     while(working){
