@@ -1,5 +1,14 @@
 ### Hi there 👋
 
+I'm a Software Engineer with strong
+problem solving and communication
+skills . Detail-oriented, quick learner,
+and big believer in team work.
+Always ready to learn.
+
+Boston Based
+
+
 <!--
 **Perez3von/Perez3von** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
