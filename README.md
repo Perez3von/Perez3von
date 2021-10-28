@@ -38,7 +38,7 @@ class SoftwareEngineer {
       console.log('Still coding...');
       drinkRedbull();
       code = code + code(task);
-      working = status(code);
+      working = status(task, code);
 
     }
 
