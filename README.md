@@ -1,12 +1,68 @@
-### Hi there 👋
+### Hello, person viewing my profile! 👋
 
-I'm a Software Engineer with strong
-problem solving and communication
-skills . Detail-oriented, quick learner,
-and big believer in team work.
-Always ready to learn.
+```
 
-Boston Based
+class Human {
+
+  constructor(info){
+
+    this.name = info.name;
+    this.age = info.age;
+    this.hobbies = info.someHobbies;
+    this.interests = info.someInterests;
+    this.skills = info.someSkills;
+
+  }
+
+  writeCode(task){ 
+
+  let code = '';
+  console.log('I'm coding...');
+  
+    while(working){
+
+      drinkRedbull();
+      result = result + code();
+
+    }
+
+  console.log('I'm done coding...');
+  return code;
+
+  }
+
+  sleep(){ 
+
+  setTimeout(Hopefully 8hrs)
+
+  }
+
+  helloMessage(){
+
+  console.log(`Hello, My name is ${this.name} and I'm ${this.age} years old.`)
+
+  }
+
+}
+
+
+const person = new Human({
+  name:'Evon Perez', 
+  age:29, 
+  someHobbies:['drone photography', 'gaming'].
+  someInterests: ['AI', 'IoT', 'Math'],
+  someSkills: ['problem solving', 'future thinking']
+});
+
+person.helloMessage();
+person.hobbies; //expect ['drone photography', 'gaming']
+person.writeCode();
+person.sleep();
+
+
+```
+
+
 
 
 <!--
