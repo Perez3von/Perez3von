@@ -12,7 +12,7 @@ const softwareEngineer = new SoftwareEngineer({
 
 softwareEngineer.helloMessage(); // expect 'Hello, My name is Evon Perez and I'm 29 years old.'
 console.log(softwareEngineer.hobbies); //expect ['drone photography', 'gaming']
-softwareEngineer.writeCode('some super cool AI project');
+softwareEngineer.writeCode('some super cool backend project');
 softwareEngineer.sleep();
 _______________________________________________________________________________________
 class SoftwareEngineer {
