@@ -22,7 +22,7 @@ class Human {
     while(working){
 
       drinkRedbull();
-      result = result + code(task);
+      code = code + code(task);
 
     }
 
