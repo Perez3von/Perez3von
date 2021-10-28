@@ -33,13 +33,13 @@ class Human {
 
   sleep(){ 
 
-  setTimeout(Hopefully 8hrs)
+  setTimeout(Hopefully 8hrs);
 
   }
 
   helloMessage(){
 
-  console.log(`Hello, My name is ${this.name} and I'm ${this.age} years old.`)
+  console.log(`Hello, My name is ${this.name} and I'm ${this.age} years old.`);
 
   }
 
