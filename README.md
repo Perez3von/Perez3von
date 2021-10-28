@@ -56,7 +56,7 @@ const person = new Human({
 
 person.helloMessage();
 person.hobbies; //expect ['drone photography', 'gaming']
-person.writeCode();
+person.writeCode('some super cool AI project');
 person.sleep();
 
 
