@@ -1,6 +1,18 @@
 ### Hello, person viewing my profile! 👋
 
 ```
+const person = new Human({
+  name:'Evon Perez', 
+  age:29, 
+  some_hobbies:['drone photography', 'gaming'].
+  some_interests: ['AI', 'IoT', 'Math'],
+  some_skills: ['problem solving', 'future thinking']
+});
+
+person.helloMessage(); // expect 'Hello, My name is Evon Perez and I'm 29 years old.'
+person.hobbies; //expect ['drone photography', 'gaming']
+person.writeCode('some super cool AI project');
+person.sleep();
 
 class Human {
 
@@ -8,9 +20,9 @@ class Human {
 
     this.name = info.name;
     this.age = info.age;
-    this.hobbies = info.someHobbies;
-    this.interests = info.someInterests;
-    this.skills = info.someSkills;
+    this.hobbies = info.some_hobbies;
+    this.interests = info.some_interests;
+    this.skills = info.some_skills;
 
   }
 
@@ -47,20 +59,6 @@ class Human {
   }
 
 }
-
-const person = new Human({
-  name:'Evon Perez', 
-  age:29, 
-  someHobbies:['drone photography', 'gaming'].
-  someInterests: ['AI', 'IoT', 'Math'],
-  someSkills: ['problem solving', 'future thinking']
-});
-
-person.helloMessage(); // expect 'Hello, My name is Evon Perez and I'm 29 years old.'
-person.hobbies; //expect ['drone photography', 'gaming']
-person.writeCode('some super cool AI project');
-person.sleep();
-
 
 ```
 
