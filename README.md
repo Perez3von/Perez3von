@@ -48,7 +48,6 @@ class Human {
 
 }
 
-
 const person = new Human({
   name:'Evon Perez', 
   age:29, 
