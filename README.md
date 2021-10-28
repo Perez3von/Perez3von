@@ -23,6 +23,7 @@ class Human {
 
       drinkRedbull();
       code = code + code(task);
+      working = status(code);
 
     }
 
