@@ -54,7 +54,7 @@ const person = new Human({
   someSkills: ['problem solving', 'future thinking']
 });
 
-person.helloMessage();
+person.helloMessage(); // expect 'Hello, My name is Evon Perez and I'm 29 years old.'
 person.hobbies; //expect ['drone photography', 'gaming']
 person.writeCode('some super cool AI project');
 person.sleep();
