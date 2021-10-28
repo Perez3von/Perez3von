@@ -6,7 +6,7 @@ const softwareEngineer = new SoftwareEngineer({
   name:'Evon Perez', 
   age:29, 
   some_hobbies:['drone photography', 'gaming'],
-  some_interests: ['AI', 'IoT', 'Math'],
+  some_interests: ['AI', 'Star Wars', 'Math'],
   some_skills: ['problem solving', 'future thinking']
 });
 
