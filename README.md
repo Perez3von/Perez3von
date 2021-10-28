@@ -36,7 +36,7 @@ class Human {
 
   sleep(){ 
 
-  setTimeout(console.log('Well rested'), 2.88e+7);
+  setTimeout(console.log('Well rested'), 2.88 * 10000000); //hopefully 8hrs
 
   }
 
