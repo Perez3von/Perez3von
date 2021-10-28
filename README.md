@@ -2,7 +2,7 @@
 
 ```
 _______________________________________________________________________________________
-const person = new Human({
+const softwareEngineer = new SoftwareEngineer({
   name:'Evon Perez', 
   age:29, 
   some_hobbies:['drone photography', 'gaming'],
@@ -10,12 +10,12 @@ const person = new Human({
   some_skills: ['problem solving', 'future thinking']
 });
 
-person.helloMessage(); // expect 'Hello, My name is Evon Perez and I'm 29 years old.'
-person.hobbies; //expect ['drone photography', 'gaming']
-person.writeCode('some super cool AI project');
-person.sleep();
+softwareEngineer.helloMessage(); // expect 'Hello, My name is Evon Perez and I'm 29 years old.'
+softwareEngineer.hobbies; //expect ['drone photography', 'gaming']
+softwareEngineer.writeCode('some super cool AI project');
+softwareEngineer.sleep();
 _______________________________________________________________________________________
-class Human {
+class SoftwareEngineer {
 
   constructor(info){
 
