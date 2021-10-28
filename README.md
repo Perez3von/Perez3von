@@ -11,7 +11,7 @@ const softwareEngineer = new SoftwareEngineer({
 });
 
 softwareEngineer.helloMessage(); // expect 'Hello, My name is Evon Perez and I'm 29 years old.'
-softwareEngineer.hobbies; //expect ['drone photography', 'gaming']
+console.log(softwareEngineer.hobbies); //expect ['drone photography', 'gaming']
 softwareEngineer.writeCode('some super cool AI project');
 softwareEngineer.sleep();
 _______________________________________________________________________________________
