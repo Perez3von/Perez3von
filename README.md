@@ -1,4 +1,4 @@
-### Hello, person viewing my profile! 👋
+### Hello, Person viewing my profile! 👋
 
 ```
 _______________________________________________________________________________________
