@@ -7,7 +7,7 @@ const softwareEngineer = new SoftwareEngineer({
   age:29, 
   some_hobbies:['drone photography', 'gaming'],
   some_interests: ['AI', 'Old rock music', 'Math'],
-  some_skills: ['problem solving', 'future thinking']
+  some_skills: ['problem solving', 'creative']
 });
 
 softwareEngineer.helloMessage(); // expect 'Hello, My name is Evon Perez and I'm 29 years old.'
