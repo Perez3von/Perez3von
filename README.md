@@ -4,7 +4,6 @@
 _______________________________________________________________________________________
 const softwareEngineer = new SoftwareEngineer({
   name:'Evon Perez', 
-  age:29, 
   some_hobbies:['drone photography', 'gaming'],
   some_interests: ['AI', 'Old rock music', 'Math'],
   some_skills: ['problem solving', 'creative']
@@ -20,7 +19,6 @@ class SoftwareEngineer {
   constructor(info){
 
     this.name = info.name;
-    this.age = info.age;
     this.hobbies = info.some_hobbies;
     this.interests = info.some_interests;
     this.skills = info.some_skills;
