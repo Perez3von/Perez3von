@@ -60,7 +60,7 @@ const softwareEngineer = new SoftwareEngineer({
   hobbies: ['drone photography', 'gaming'],
   interests: ['AI', 'Old rock music', 'Math'],
   skills: ['problem solving', 'creative'],
-  yearsOfExperience: 7
+  yearsOfExperience: 5
 });
 
 console.log(softwareEngineer.helloMessage());
