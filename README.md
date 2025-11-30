@@ -1,80 +1,74 @@
 ### Hello, Person viewing my profile! 👋
 
 ```
-_______________________________________________________________________________________
-const softwareEngineer = new SoftwareEngineer({
-  name:'Evon Perez', 
-  some_hobbies:['drone photography', 'gaming'],
-  some_interests: ['AI', 'Old rock music', 'Math'],
-  some_skills: ['problem solving', 'creative']
-});
-
-softwareEngineer.helloMessage(); // expect 'Hello, My name is Evon Perez and I'm 29 years old.'
-console.log(softwareEngineer.hobbies); //expect ['drone photography', 'gaming']
-softwareEngineer.writeCode('some super cool backend project');
-softwareEngineer.sleep();
-_______________________________________________________________________________________
 class SoftwareEngineer {
-
-  constructor(info){
-
-    this.name = info.name;
-    this.hobbies = info.some_hobbies;
-    this.interests = info.some_interests;
-    this.skills = info.some_skills;
-
-  }
-
-  writeCode(task){ 
-
-  let code = '';
-  let working = true;
-  console.log("I'm coding...");
-  
-    while(working){
-    
-      console.log('Still coding...');
-      drinkRedbull();
-      code = code + code(task);
-      working = status(task, code);
-
+  constructor({
+    name,
+    hobbies = [],
+    interests = [],
+    skills = [],
+    yearsOfExperience = 0
+  }) {
+    if (!name) {
+      throw new Error('SoftwareEngineer requires a name.');
     }
 
-  console.log("I'm done coding...");
-  return code;
-
+    this.name = name;
+    this.hobbies = hobbies;
+    this.interests = interests;
+    this.skills = skills;
+    this.yearsOfExperience = yearsOfExperience;
   }
 
-  sleep(){ 
-  
-  setTimeout(() => {console.log("Well rested")}, 2.88 * 10000)  //hopefully 8hrs
- 
+  helloMessage() {
+    return `Hello, my name is ${this.name}.`;
   }
 
-  helloMessage(){
+  async writeCode(project) {
+    if (!project) {
+      throw new Error('writeCode requires a project description.');
+    }
 
-  console.log(`Hello, My name is ${this.name} and I'm ${this.age} years old.`);
+    console.log(`Starting work on: ${project}`);
+    let code = '';
+    const iterations = 3;
 
+    for (let i = 0; i < iterations; i += 1) {
+      code += `\n// Implementation step ${i + 1} for ${project}`;
+      await this.#simulateWorkCycle();
+    }
+
+    console.log(`Completed work on: ${project}`);
+    return code.trim();
   }
 
+  async sleep(hours = 8) {
+    if (hours <= 0) return;
+
+    const ms = hours * 60 * 60 * 1000;
+    await new Promise((resolve) => setTimeout(resolve, ms));
+    console.log('Well rested.');
+  }
+
+  async #simulateWorkCycle() {
+    await new Promise((resolve) => setTimeout(resolve, 250));
+  }
 }
-_______________________________________________________________________________________
-```
 
+const softwareEngineer = new SoftwareEngineer({
+  name: 'Evon Perez',
+  hobbies: ['drone photography', 'gaming'],
+  interests: ['AI', 'Old rock music', 'Math'],
+  skills: ['problem solving', 'creative'],
+  yearsOfExperience: 7
+});
 
+console.log(softwareEngineer.helloMessage());
+softwareEngineer
+  .writeCode('high-scale backend project')
+  .then((code) => console.log(code));
 
+softwareEngineer.sleep(0.01);
 
-<!--
-**Perez3von/Perez3von** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+'''
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
